@@ -1,6 +1,6 @@
 `use strict`
 
-const {assert: {isObject, equal}} = require(`chai`)
+const {assert: {isObject, equal, property}} = require(`chai`)
 const parseArgs = require(`../lib/parse-args`)
 
 describe(`parseArgs`, () => {
@@ -8,11 +8,10 @@ describe(`parseArgs`, () => {
     isObject(parseArgs())
   })
 
-  // it(`should take 2 arguments`, () => {
-  //   equal(parseArgs.length, 2)
-  // })
+  it(`should return an object with keys "num1", "operator" and "num2"`, () => {
+    property(parseArgs(), 'num1')
+    property(parseArgs(), 'operator')
+    property(parseArgs(), 'num2')
+  })
 
-  // it(`should parseArgs the numbers`, () => {
-  //   equal(parseArgs(4,2), 2)
-  // })
 })
