@@ -12,7 +12,7 @@ describe(`divide`, () => {
     equal(divide.length, 2)
   })
 
-  // it(`should divide the numbers`, () => {
-  //   equal(divide(2,1), 2)
-  // })
+  it(`should divide the numbers`, () => {
+    equal(divide(4,2), 2)
+  })
 })
