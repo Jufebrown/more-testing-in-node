@@ -12,7 +12,7 @@ describe(`multiply`, () => {
     equal(multiply.length, 2)
   })
 
-  // it(`should subtract the second argument from the first`, () => {
-  //   equal(subtract(2,1), 1)
-  // })
+  it(`should multiply the numbers`, () => {
+    equal(multiply(2,1), 2)
+  })
 })
