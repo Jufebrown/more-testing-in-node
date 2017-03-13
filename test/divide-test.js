@@ -8,9 +8,9 @@ describe(`divide`, () => {
     isNumber(divide())
   })
 
-  // it(`should take 2 arguments`, () => {
-  //   equal(divide.length, 2)
-  // })
+  it(`should take 2 arguments`, () => {
+    equal(divide.length, 2)
+  })
 
   // it(`should divide the numbers`, () => {
   //   equal(divide(2,1), 2)
