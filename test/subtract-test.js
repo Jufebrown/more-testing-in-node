@@ -12,7 +12,7 @@ describe(`subtract`, () => {
     equal(subtract.length, 2)
   })
 
-  // it(`should sum the 2 arguments`, () => {
-  //   equal(add(1,2), 3)
-  // })
+  it(`should subtract the second argument from the first`, () => {
+    equal(subtract(2,1), 1)
+  })
 })
