@@ -1,6 +1,6 @@
 `use strict`
 
-const {assert: {isNumber, isArray, property}} = require(`chai`)
+const {assert: {isNumber, isArray, property, equal}} = require(`chai`)
 const calculate = require(`../lib/calculate`)
 
 describe(`calculate`, () => {
@@ -8,14 +8,8 @@ describe(`calculate`, () => {
     isNumber(calculate().answer)
   })
 
-  it(`should get the user input as an array`, () => {
-    isArray(calculate().args)
-  })
-
-  it(`should pass the user args through parse-args to get an object`, () => {
-    property(calculate(), 'num1')
-    property(calculate(), 'operator')
-    property(calculate(), 'num2')
+  it(`should perform addition if operator = '+'`, () => {
+    equal(calculate(1, '+', 2), 3)
   })
 
 })
