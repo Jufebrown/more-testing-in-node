@@ -12,7 +12,13 @@ describe(`calculate`, () => {
     equal(calculate(1, '+', 2), 3)
   })
 
-    it(`should perform subtraction if operator = '-'`, () => {
+  it(`should perform subtraction if operator = '-'`, () => {
     equal(calculate(1, '-', 2), -1)
   })
+
+  it(`should perform multiplication if operator = '*'`, () => {
+    equal(calculate(2, '*', 3), 6)
+  })
+
+
 })
