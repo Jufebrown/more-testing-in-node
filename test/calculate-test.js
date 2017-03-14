@@ -20,5 +20,7 @@ describe(`calculate`, () => {
     equal(calculate(2, '*', 3), 6)
   })
 
-
+  it(`should perform division if operator = '/'`, () => {
+    equal(calculate(10, '/', 2), 5)
+  })
 })
