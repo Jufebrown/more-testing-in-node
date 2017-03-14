@@ -19,7 +19,7 @@ describe(`parseArgs`, () => {
   it(`should take an array of length 3 as an argument and output the elements of the array to num1, operator, and num2 respectively`, () => {
     let testArgs = [4, '*', 2]
     propertyVal(parseArgs(testArgs), 'num1', 4)
-    // propertyVal(parseArgs(testArgs), 'operator', '*')
-    // propertyVal(parseArgs(testArgs), 'num2', 2)
+    propertyVal(parseArgs(testArgs), 'operator', '*')
+    propertyVal(parseArgs(testArgs), 'num2', 2)
   })
 })
