@@ -5,7 +5,7 @@ const calculate = require(`../lib/calculate`)
 
 describe(`calculate`, () => {
   it(`should output a number`, () => {
-    isNumber(calculate().answer)
+    isNumber(calculate(1, '+', 2))
   })
 
   it(`should perform addition if operator = '+'`, () => {
